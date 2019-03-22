@@ -1,9 +1,10 @@
 import React from 'react';
+import UserLink from "./UserLink";
 
-function Body({user}: {user: string}) {
+function Body() {
     return (
         <div className="Body">
-            Welcome: {user}
+            Click this link: <UserLink/>
         </div>
     );
 }

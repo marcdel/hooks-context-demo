@@ -1,16 +1,16 @@
 import React, {useContext} from 'react';
 import Navigation from "./Nagivation";
-import Header from "./Header";
 import Body from "./Body";
 import {UserContext} from "./App";
+import UserHeader from "./UserHeader";
 
 function PageLayout() {
     const user = useContext(UserContext)
     return (
         <div className="PageLayout">
-            <Header user={user}/>
+            <UserHeader/>
             <Navigation/>
-            <Body user={user}/>
+            <Body/>
         </div>
     );
 }
